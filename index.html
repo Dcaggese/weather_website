@@ -8,15 +8,16 @@
     <title>Weather - Home</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md bg-primary">
-        <div class="container-xxl">
-            <a href="/index.html" class="navbar-brand col-sm-9">
+    <!-- navbar fixes needed: input size should be responsive and dropdown doesn't work as intended -->
+    <nav class="navbar navbar-expand-sm bg-primary">
+        <div class="container-fluid">
+            <a href="/index.html" class="navbar-brand">
                 <span class="fw-bold text-white">
                     <i class="bi bi-cloud-fill"></i>
                     The Weather
                 </span>
             </a>
-            <form action="#" class="navbar-brand col-sm-3">
+            <form action="#" class="navbar-brand">
                 <div class="input-group">
                     <input type="text" name="city" placeholder="Enter a city" class="form-control">
                     <button type="submit" class="btn" style="background-color: white;">
@@ -24,6 +25,14 @@
                     </button>
                 </div>
             </form>
+            <div class="dropdown navbar">
+                <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    &#8457
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">&#8451</a></li>
+                </ul>
+              </div>
         </div>
     </nav>
 
