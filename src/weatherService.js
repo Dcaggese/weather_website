@@ -1,4 +1,6 @@
-const API_KEY = '4be238b1be5da7ded42801851804de83';
+import weatherKey from privateInfo;
+
+const API_KEY = weatherKey;
 
 const getFormattedWeatherData = async (city, units = 'metric') => {
 
