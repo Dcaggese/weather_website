@@ -7,7 +7,7 @@ import { getFormattedWeatherData } from './weatherService';
 function App() {
 
   const [weather, setWeather] = useState(null);
-  const [city, setCity] = useState("paris");
+  const [city, setCity] = useState("philadelphia");
   const [units, setUnits] = useState("imperial")
   const [bg, setBg] = useState(hotbg);
 
